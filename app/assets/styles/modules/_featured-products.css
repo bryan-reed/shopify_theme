@@ -1,7 +1,9 @@
 .featured-products {
+    padding: 5px;
+    margin-bottom: 50px;
     &__product {
-        width: 250px;
-        height: 100px;
-        background-color: red;
+        height: 350px;
+        margin: 0 10px;
+        background-color: #ccc;
     }
 }
