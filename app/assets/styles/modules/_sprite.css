@@ -1,0 +1,102 @@
+/* DO not edit modules/_sprite directly as it is generated automatically by gulp instead edit gulp/templates/sprite.css*/
+	.icon {
+		background-image: url('/assets/images/sprites/sprite-e3c1d03f.svg');
+	}
+	.no-svg .icon {
+		background-image: url('/assets/images/sprites/sprite-e3c1d03f.png');
+	}
+	.icon--account {
+		width:18px;
+		height:18px;
+		background-position: 25% 0;
+	}
+	.icon--cart {
+		width:18px;
+		height:18px;
+		background-position: 75% 0;
+	}
+	.icon--facebook {
+		width:18px;
+		height:18px;
+		background-position: 0 33.333333333333336%;
+	}
+	.icon--facebook_c {
+		width:18px;
+		height:18px;
+		background-position: 25% 33.333333333333336%;
+	}
+	.icon--google {
+		width:18px;
+		height:18px;
+		background-position: 50% 0;
+	}
+	.icon--google_c {
+		width:18px;
+		height:18px;
+		background-position: 50% 33.333333333333336%;
+	}
+	.icon--heart {
+		width:18px;
+		height:18px;
+		background-position: 0 66.66666666666667%;
+	}
+	.icon--instagram {
+		width:18px;
+		height:18px;
+		background-position: 25% 66.66666666666667%;
+	}
+	.icon--instagram2 {
+		width:18px;
+		height:18px;
+		background-position: 50% 66.66666666666667%;
+	}
+	.icon--instagram_c {
+		width:18px;
+		height:18px;
+		background-position: 0 0;
+	}
+	.icon--instagram_c2 {
+		width:18px;
+		height:18px;
+		background-position: 75% 33.333333333333336%;
+	}
+	.icon--logo {
+		width:18px;
+		height:8.2px;
+		background-position: 75% 56.426332288401255%;
+	}
+	.icon--pinterest {
+		width:18px;
+		height:18px;
+		background-position: 0 100%;
+	}
+	.icon--pinterest_c {
+		width:18px;
+		height:18px;
+		background-position: 25% 100%;
+	}
+	.icon--search {
+		width:18px;
+		height:18px;
+		background-position: 50% 100%;
+	}
+	.icon--snapchat {
+		width:18px;
+		height:18px;
+		background-position: 75% 100%;
+	}
+	.icon--snapchat_c {
+		width:18px;
+		height:18px;
+		background-position: 100% 0;
+	}
+	.icon--twitter {
+		width:18px;
+		height:18px;
+		background-position: 100% 33.333333333333336%;
+	}
+	.icon--twitter_c {
+		width:18px;
+		height:18px;
+		background-position: 100% 66.66666666666667%;
+	}
