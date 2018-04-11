@@ -83,7 +83,7 @@
         position: relative;
         h1 {
             text-indent: -9999px;
-            background-image: url('/assets/images/logo.jpg');
+            background-image: url('../../assets/images/logo.jpg');
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;

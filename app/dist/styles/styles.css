@@ -1027,11 +1027,11 @@ a {
 /* DO not edit modules/_sprite directly as it is generated automatically by gulp instead edit gulp/templates/sprite.css*/
 
 .icon {
-		background-image: url('/assets/images/sprites/sprite-e3c1d03f.svg');
+		background-image: url('../../assets/images/sprites/sprite-e3c1d03f.svg');
 	}
 
 .no-svg .icon {
-		background-image: url('/assets/images/sprites/sprite-e3c1d03f.png');
+		background-image: url('../../assets/images/sprites/sprite-e3c1d03f.png');
 	}
 
 .icon--account {
@@ -1273,7 +1273,7 @@ a {
 
 .main-header__logo h1 {
             text-indent: -9999px;
-            background-image: url('/assets/images/logo.jpg');
+            background-image: url('../../assets/images/logo.jpg');
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
