@@ -5,11 +5,12 @@ cssvars = require('postcss-simple-vars'),
 nested = require('postcss-nested'),
 cssimport = require('postcss-import'),
 mixins = require('postcss-mixins'),
-hexrgba = require('postcss-hexrgba');
+hexrgba = require('postcss-hexrgba'),
+percentage = require('postcss-percentage');
 
 gulp.task('styles', ['flexSliderFonts', 'slickCarouselFonts'], () => {
     return gulp.src('./app/assets/styles/styles.css')
-        .pipe(postcss([cssimport, mixins, cssvars, nested, hexrgba, autoprefixer]))
+        .pipe(postcss([cssimport, mixins, cssvars, nested, percentage, hexrgba, autoprefixer]))
         .on('error', function(error) {
             console.log(error.toString());
             this.emit('end');

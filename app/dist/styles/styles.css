@@ -1027,11 +1027,11 @@ a {
 /* DO not edit modules/_sprite directly as it is generated automatically by gulp instead edit gulp/templates/sprite.css*/
 
 .icon {
-		background-image: url('../../assets/images/sprites/sprite-e3c1d03f.svg');
+		background-image: url('../../assets/images/sprites/sprite-4003e2db.svg');
 	}
 
 .no-svg .icon {
-		background-image: url('../../assets/images/sprites/sprite-e3c1d03f.png');
+		background-image: url('../../assets/images/sprites/sprite-4003e2db.png');
 	}
 
 .icon--account {
@@ -1040,94 +1040,76 @@ a {
 		background-position: 25% 0;
 	}
 
-.icon--cart {
-		width:18px;
-		height:18px;
-		background-position: 75% 0;
+.icon--bag {
+		width:14.5px;
+		height:17.79px;
+		background-position: 23.841059602649008% 99.6067967982025%;
 	}
 
 .icon--facebook {
-		width:18px;
+		width:9.38px;
 		height:18px;
-		background-position: 0 33.333333333333336%;
+		background-position: 0 25.35211267605634%;
 	}
 
 .icon--facebook_c {
 		width:18px;
 		height:18px;
-		background-position: 25% 33.333333333333336%;
+		background-position: 13.027777777777779% 25.35211267605634%;
 	}
 
 .icon--google {
 		width:18px;
-		height:18px;
+		height:11.85px;
 		background-position: 50% 0;
 	}
 
 .icon--google_c {
 		width:18px;
 		height:18px;
-		background-position: 50% 33.333333333333336%;
-	}
-
-.icon--heart {
-		width:18px;
-		height:18px;
-		background-position: 0 66.66666666666667%;
+		background-position: 50% 16.690140845070424%;
 	}
 
 .icon--instagram {
 		width:18px;
 		height:18px;
-		background-position: 25% 66.66666666666667%;
-	}
-
-.icon--instagram2 {
-		width:18px;
-		height:18px;
-		background-position: 50% 66.66666666666667%;
+		background-position: 0 50.70422535211268%;
 	}
 
 .icon--instagram_c {
 		width:18px;
 		height:18px;
-		background-position: 0 0;
-	}
-
-.icon--instagram_c2 {
-		width:18px;
-		height:18px;
-		background-position: 75% 33.333333333333336%;
-	}
-
-.icon--logo {
-		width:18px;
-		height:8.2px;
-		background-position: 75% 56.426332288401255%;
+		background-position: 25% 50.70422535211268%;
 	}
 
 .icon--pinterest {
-		width:18px;
+		width:14.39px;
 		height:18px;
-		background-position: 0 100%;
+		background-position: 47.6127496362915% 50.70422535211268%;
 	}
 
 .icon--pinterest_c {
 		width:18px;
 		height:18px;
-		background-position: 25% 100%;
+		background-position: 0 0;
 	}
 
 .icon--search {
 		width:18px;
-		height:18px;
-		background-position: 50% 100%;
+		height:17.77px;
+		background-position: 75% 21.05854274884178%;
+	}
+
+.icon--shoppingCart {
+		width:18px;
+		height:15.49px;
+		background-position: 75% 44.578968847775805%;
 	}
 
 .icon--snapchat {
 		width:18px;
-		height:18px;
-		background-position: 75% 100%;
+		height:16.93px;
+		background-position: 0 74.92715415568199%;
 	}
 
 .icon--snapchat_c {
@@ -1136,16 +1118,28 @@ a {
 		background-position: 100% 0;
 	}
 
-.icon--twitter {
+.icon--tumblr {
+		width:11.84px;
+		height:18px;
+		background-position: 92.11873080859775% 25.35211267605634%;
+	}
+
+.icon--tumblr_c {
 		width:18px;
 		height:18px;
-		background-position: 100% 33.333333333333336%;
+		background-position: 100% 50.70422535211268%;
+	}
+
+.icon--twitter {
+		width:18px;
+		height:15px;
+		background-position: 75% 0;
 	}
 
 .icon--twitter_c {
 		width:18px;
 		height:18px;
-		background-position: 100% 66.66666666666667%;
+		background-position: 0 99.90140845070424%;
 	}
 
 .container {
@@ -1526,7 +1520,7 @@ a {
 
 .image-grid img {
         width: 100%;
-        /* height: 350px; */
+        height: auto;
     }
 
 .image-grid__item {
@@ -1633,8 +1627,97 @@ a {
     margin-bottom: 50px;
 }
 
-.featured-products__product {
-        height: 350px;
-        margin: 0 10px;
-        background-color: #ccc;
+.featured-products .slick-prev:before, .featured-products .slick-next:before {
+        color: #000;
     }
+
+.featured-products img {
+        width: 100%;
+    }
+
+.featured-products .image-hide {
+        display: none;
+    }
+
+.featured-products .no-slicker {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+.featured-products .no-slicker div {
+            flex-basis: 1;
+        }
+
+@media (min-width: 530px) {
+
+.featured-products .no-slicker div {
+                flex-basis: 50%
+        }
+	}
+
+@media (min-width: 800px) {
+
+.featured-products .no-slicker div {
+                flex-basis: 33.333333%
+        }
+	}
+
+.featured-products__product {
+
+        position: relative;
+        margin: 0 10px;
+        /* background-color: #ccc; */
+    }
+
+.featured-products__product .product-image .second {
+                position: absolute;
+                top: 0;
+                left: 0;
+                /* transform: translateX(calc(100% + 10px)); */
+                opacity: 0;
+                transition: .5s opacity ease-out;
+            }
+
+.featured-products__product .product-image:hover .second {
+                /* transform: translateX(0); */
+                opacity: 1;
+            }
+
+.featured-products__product .product-content {
+            margin-top: 15px;
+        }
+
+.featured-products__product .product-content.left {
+                text-align: left;
+            }
+
+.featured-products__product .product-content.center {
+                text-align: center;
+            }
+
+.featured-products__product .product-content.right {
+                text-align: right;
+            }
+
+.featured-products__product .product-content .chip {
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                display: inline-block;
+            }
+
+.featured-products__product .product-content .red {
+                background-color: red;
+            }
+
+.featured-products__product .product-content .green {
+                background-color: green;
+            }
+
+.featured-products__product .product-content .brown {
+                background-color: brown;
+            }
+
+.featured-products__product .product-content .blue {
+                background-color: blue;
+            }
