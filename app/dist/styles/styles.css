@@ -1644,9 +1644,7 @@ a {
         flex-wrap: wrap;
     }
 
-.featured-products .no-slicker div {
-            flex-basis: 1;
-        }
+/* flex-basis: 1; */
 
 @media (min-width: 530px) {
 
@@ -1720,4 +1718,92 @@ a {
 
 .featured-products__product .product-content .blue {
                 background-color: blue;
+            }
+
+.featured-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.featured-text h2 {
+        text-align: center;
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
+
+.featured-text .content {
+        position: relative;
+        padding: 10px;
+        margin: 15px;
+        flex:1;
+    }
+
+.featured-text .content.normal-border {
+            border: 3px solid #000;
+        }
+
+.featured-text .content.double-border {
+            border: 3px solid #ccc;
+            outline: 3px solid blue;
+            outline-offset: 15px;
+        }
+
+.featured-text .content.dashed-border {
+            border: 3px dashed #000;
+        }
+
+.featured-text .content.dotted-border {
+            border: 3px dotted #000;
+        }
+
+.video {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.video iframe {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+   }
+
+.blog-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blog-section h2 {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+.blog-section img {
+        width: 100%;
+    }
+
+.blog-section .post {
+        flex-basis: 33.333333%;
+        padding: 10px;
+        position: relative;
+    }
+
+.blog-section .post .blog-content {
+            text-align: center;
+        }
+
+.blog-section .post .blog-content .date {
+                font-size: 12px;
+                color: #ccc;
+                margin-bottom: 10px;
+                display: block;
+            }
+
+.blog-section .post .blog-content .body {
+                margin-bottom: 10px;
             }

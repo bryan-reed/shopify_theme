@@ -1,0 +1,30 @@
+.featured-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    h2 {
+        text-align: center;
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
+    .content {
+        &.normal-border {
+            border: 3px solid #000;
+        }
+        &.double-border {
+            border: 3px solid #ccc;
+            outline: 3px solid blue;
+            outline-offset: 15px;
+        }
+        &.dashed-border {
+            border: 3px dashed #000;
+        }
+        &.dotted-border {
+            border: 3px dotted #000;
+        }
+        position: relative;
+        padding: 10px;
+        margin: 15px;
+        flex:1;
+    }
+}
