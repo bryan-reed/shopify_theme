@@ -27,9 +27,12 @@
         width: 20px;
         height: 19px;
         position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
+        background-color: #fff;
+        top: 50px;
+        right: -35px;
+        // left: 0;
+        // top: 50%;
+        // transform: translateY(-150%);
         z-index: 10;
         &::before {
             content: "";
@@ -131,33 +134,45 @@
     &__nav {
         order: 5;
         margin: 0 auto;
-        width: 100%;
+        width: 50%;
         z-index: 1;
+        height: 100vh;
         background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: .2s all ease-out;
+        &--open {
+            transform: translateX(0);
+            position: fixed;    
+            // margin-left: 0;  
+        }
         @mixin atMedium {
             position: relative;
+            width: 100%;
+            transform: translateX(0);
         }
         &__top{
             display: flex;
-            width: 65%;
+            width: 50%;
             margin: 0 auto;
             flex-direction: column;
-            position: fixed;
+            // position: fixed;
             background: #fff;
-            transform: translateX(-100%);
-            transition: .2s transform ease-out;
-            height: 100vh;
-            top: 0;
-            left: 0;
-            &--open {
-                transform: translateX(0);    
-            }
+            // margin-left: -100%;
+            // transform: translateX(-100%);
+            // transition: .2s all ease-out;
+            // height: 100vh;
+            // top: 0;
+            // left: 0;
             @mixin atMedium {
                 flex-direction: row;
                 justify-content: space-around;
                 position: initial;
                 height: auto;
                 transform: none;
+                width: 65%%;
             }
             li.dropdown-1 {
                 position: relative;

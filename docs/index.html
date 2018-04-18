@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shopify Theme</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="assets/styles/styles-20a01f920c.css"/>
+    <link rel="stylesheet" href="assets/styles/styles-65550baf91.css"/>
     <script src="assets/scripts/Vendor-1ec4584e73.js"></script>
 </head>
 <body>
+    <div class="move-over">
     <header class="main-header">
         <!-- Promo Bar -->
         <div class="main-header__promo">
@@ -17,9 +18,9 @@
         </div>
         <!-- Logo -->
         <div class="main-header__logo">
-                <div class="main-header__menu-icon">
+                <!-- <div class="main-header__menu-icon">
                     <div class="main-header__menu-icon__middle"></div>
-                </div>
+                </div> -->
             <h1>Gypsy</h1>
         </div>
         <!-- Social Media -->
@@ -40,6 +41,9 @@
             <span class="icon icon--shoppingCart"></span>
         </div>
         <nav class="main-header__nav">
+                <div class="main-header__menu-icon">
+                    <div class="main-header__menu-icon__middle"></div>
+                </div>
             <ul class="main-header__nav__top">
                 <li class="dropdown-1">
                     <a href="">Shop</a>
@@ -113,7 +117,12 @@
         </ul>
     </div>
         <div class="image-grid container">
-            <div class="image-grid__item grid-item--66 grid-item--100m middle" style="background-image: url(assets/images/hero.jpg);">
+            <!-- When looping through, if not first and size > 50 then float to the right, Need to figure out how to determine next right float element -->
+            <!-- Solved by floating everything, give control to user to either be left or right
+            User can choose size: [25,33,50,66,75,100] and side: [left, right] (left is default)
+            -->
+            <div class="image-grid__item grid-item--25 grid-item--100m middle f-left">
+                <img data-src="assets/images/gypsy2.jpg" class="lazyload" />
                 <div class="grid-item center">
                     <h2>Image Title</h2>
                 </div>
@@ -123,7 +132,8 @@
                     </div>
                 </div>
             </div>
-            <div class="image-grid__item grid-item--33 grid-item--50m top" style="background-image: url(assets/images/gypsy2.jpg);">
+            <div class="image-grid__item grid-item--25 grid-item--50m top f-left">
+                <img data-src="assets/images/gypsy2.jpg" class="lazyload" />
                 <div class="grid-item center">
                         <h2>Image Title</h2>
                     </div>
@@ -133,7 +143,8 @@
                         </div>
                     </div>
             </div>
-            <div class="image-grid__item grid-item--33 grid-item--50m bottom" style="background-image: url(assets/images/gypsy3.jpg);">
+            <div class="image-grid__item grid-item--50 grid-item--50m bottom f-right">
+                <img data-src="assets/images/gypsy3.jpg" class="lazyload" />
                 <div class="grid-item center">
                         <h2>Image Title</h2>
                     </div>
@@ -143,7 +154,19 @@
                         </div>
                     </div>
             </div>
-            <div class="image-grid__item grid-item--66 grid-item--100m middle" style="background-image: url(assets/images/hero.jpg);">
+            <div class="image-grid__item grid-item--25 grid-item--100m middle f-left">
+                <img data-src="assets/images/gypsy2.jpg" class="lazyload" />
+                <div class="grid-item center">
+                        <h2>Image Title</h2>
+                    </div>
+                    <div class="grid-hover">
+                        <div class="grid-hover__content">
+                            Hovered On Me
+                        </div>
+                    </div>
+            </div>
+            <div class="image-grid__item grid-item--25 grid-item--100m middle f-left">
+                <img data-src="assets/images/gypsy2.jpg" class="lazyload" />
                 <div class="grid-item center">
                         <h2>Image Title</h2>
                     </div>
@@ -295,6 +318,7 @@
     </div>
     <footer>
     </footer>
-    <script src="assets/scripts/App-8e2d82b54d.js"></script>
+    </div>
+    <script src="assets/scripts/App-e9b43464e3.js"></script>
 </body>
 </html>

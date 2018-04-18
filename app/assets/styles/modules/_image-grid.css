@@ -1,15 +1,43 @@
 .image-grid {
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
+    // align-items: flex-start;
+    position: relative;
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
     
     img {
         width: 100%;
         height: auto;
     }
     &__item {
+        &.f-left {
+            float: left;
+        }
+        &.f-right {
+            float: right;
+        }
+        &.new-row {
+            clear: both;
+        }
+        &.bottom-right-corner {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        &.bottom-left-corner {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
         padding: 5px;
-        height: 350px;
+        // height: 350px;
+        float: left;
         position: relative;
+        height: auto;
         background-position: center;
         background-size: cover;
         background-clip: content-box;
@@ -29,32 +57,41 @@
         }
     }
     .grid-item--25m {
-        flex-basis: 25%;
+        // flex-basis: 25%;
+        width: 25%;
     }
     .grid-item--50m {
-        flex-basis: 50%;
+        // flex-basis: 50%;
+        width: 50%;
     }
     .grid-item--100m {
-        flex-basis: 100%;
+        // flex-basis: 100%;
+        width: 100%
     }
     @mixin atMedium {
         .grid-item--25 {
-            flex-basis: 25%;
+            // flex-basis: 25%;
+            width: 25%;
         }
         .grid-item--33 {
-            flex-basis: calc(100% / 3);
+            // flex-basis: calc(100% / 3);
+            width: calc(100% / 3);
         }
         .grid-item--50 {
-            flex-basis: 50%;
+            // flex-basis: 50%;
+            width: 50%;
         }
         .grid-item--66 {
-            flex-basis: calc((100% / 3) * 2);
+            // flex-basis: calc((100% / 3) * 2);
+            width: calc((100% / 3) * 2);
         }
         .grid-item--75 {
-            flex-basis: 75%;
+            // flex-basis: 75%;
+            width: 75%;
         }
         .grid-item--100 {
-            flex-basis: 100%;
+            // flex-basis: 100%;
+            width: 100%;
         }
     }
     .grid-hover {
@@ -79,6 +116,7 @@
     .grid-item {
         width: 100%;
         padding: 35px;
+        position: absolute;
         &.center {
            text-align: center;
         }

@@ -1024,6 +1024,19 @@ a {
     color: #000;
 }
 
+.move-over {
+    margin-left: 0;
+    position: absolute;
+    /* transform: translateX(0);
+    transition: 0.2s transform ease-out; */
+    transition: 0.2s all ease-out;
+}
+
+.move-over.open {
+        margin-left: 50%;
+        /* transform: translateX(50%); */
+    }
+
 /* DO not edit modules/_sprite directly as it is generated automatically by gulp instead edit gulp/templates/sprite.css*/
 
 .icon {
@@ -1185,10 +1198,12 @@ a {
         width: 20px;
         height: 19px;
         position: absolute;
-        left: 0;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-                transform: translateY(-50%);
+        background-color: #fff;
+        top: 50px;
+        right: -35px;
+        // left: 0;
+        // top: 50%;
+        // transform: translateY(-150%);
         z-index: 10;
     }
 
@@ -1326,37 +1341,49 @@ a {
 .main-header__nav {
         order: 5;
         margin: 0 auto;
-        width: 100%;
+        width: 50%;
         z-index: 1;
+        height: 100vh;
         background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+        transition: .2s all ease-out;
     }
+
+.main-header__nav--open {
+            -webkit-transform: translateX(0);
+                    transform: translateX(0);
+            position: fixed;    
+            // margin-left: 0;  
+        }
 
 @media (min-width: 800px) {
 
 .main-header__nav {
-            position: relative
+            position: relative;
+            width: 100%;
+            -webkit-transform: translateX(0);
+                    transform: translateX(0)
     }
 	}
 
 .main-header__nav__top{
             display: flex;
-            width: 65%;
+            width: 50%;
             margin: 0 auto;
             flex-direction: column;
-            position: fixed;
+            // position: fixed;
             background: #fff;
-            -webkit-transform: translateX(-100%);
-                    transform: translateX(-100%);
-            transition: .2s transform ease-out;
-            height: 100vh;
-            top: 0;
-            left: 0;
+            // margin-left: -100%;
+            // transform: translateX(-100%);
+            // transition: .2s all ease-out;
+            // height: 100vh;
+            // top: 0;
+            // left: 0;
         }
-
-.main-header__nav__top--open {
-                -webkit-transform: translateX(0);
-                        transform: translateX(0);    
-            }
 
 @media (min-width: 800px) {
 
@@ -1366,7 +1393,8 @@ a {
                 position: initial;
                 height: auto;
                 -webkit-transform: none;
-                        transform: none
+                        transform: none;
+                width: 65%%
         }
 	}
 
@@ -1514,9 +1542,17 @@ a {
             }
 
 .image-grid {
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
+    // align-items: flex-start;
+    position: relative;
 }
+
+.image-grid::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 
 .image-grid img {
         width: 100%;
@@ -1525,14 +1561,40 @@ a {
 
 .image-grid__item {
         padding: 5px;
-        height: 350px;
+        // height: 350px;
+        float: left;
         position: relative;
+        height: auto;
         background-position: center;
         background-size: cover;
         background-clip: content-box;
         display: flex;
         flex-direction: column;
     }
+
+.image-grid__item.f-left {
+            float: left;
+        }
+
+.image-grid__item.f-right {
+            float: right;
+        }
+
+.image-grid__item.new-row {
+            clear: both;
+        }
+
+.image-grid__item.bottom-right-corner {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+.image-grid__item.bottom-left-corner {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
 
 .image-grid__item:hover .grid-hover {
             opacity:1;
@@ -1551,35 +1613,44 @@ a {
         }
 
 .image-grid .grid-item--25m {
-        flex-basis: 25%;
+        // flex-basis: 25%;
+        width: 25%;
     }
 
 .image-grid .grid-item--50m {
-        flex-basis: 50%;
+        // flex-basis: 50%;
+        width: 50%;
     }
 
 .image-grid .grid-item--100m {
-        flex-basis: 100%;
+        // flex-basis: 100%;
+        width: 100%
     }
 
 @media (min-width: 800px) {
         .image-grid .grid-item--25 {
-            flex-basis: 25%;
+            // flex-basis: 25%;
+            width: 25%;
         }
         .image-grid .grid-item--33 {
-            flex-basis: calc(100% / 3);
+            // flex-basis: calc(100% / 3);
+            width: calc(100% / 3);
         }
         .image-grid .grid-item--50 {
-            flex-basis: 50%;
+            // flex-basis: 50%;
+            width: 50%;
         }
         .image-grid .grid-item--66 {
-            flex-basis: calc((100% / 3) * 2);
+            // flex-basis: calc((100% / 3) * 2);
+            width: calc((100% / 3) * 2);
         }
         .image-grid .grid-item--75 {
-            flex-basis: 75%;
+            // flex-basis: 75%;
+            width: 75%;
         }
         .image-grid .grid-item--100 {
-            flex-basis: 100%;
+            // flex-basis: 100%;
+            width: 100%;
         }
 	}
 
@@ -1608,6 +1679,7 @@ a {
 .image-grid .grid-item {
         width: 100%;
         padding: 35px;
+        position: absolute;
     }
 
 .image-grid .grid-item.center {
