@@ -1479,7 +1479,8 @@ a {
 @media (min-width: 800px) {
 
 .main-header__nav__top li {
-                    text-align: center
+                    text-align: center;
+                    border-bottom: none
             }
 	}
 

@@ -231,6 +231,7 @@
                 }
                 @mixin atMedium {
                     text-align: center;
+                    border-bottom: none;
                 }   
                 
                 // padding:10px;
