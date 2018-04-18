@@ -132,6 +132,15 @@
 		}
     }
     &__nav {
+        &::before {
+         content: "";
+         width: 45px;
+         height: 35px;
+         position: absolute;
+         background-color: #fff;
+         right: -45px;
+         top: 42px;
+        }
         order: 5;
         margin: 0 auto;
         width: 50%;

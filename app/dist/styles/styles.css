@@ -1353,6 +1353,16 @@ a {
         transition: .2s all ease-out;
     }
 
+.main-header__nav::before {
+         content: "";
+         width: 45px;
+         height: 35px;
+         position: absolute;
+         background-color: #fff;
+         right: -45px;
+         top: 42px;
+        }
+
 .main-header__nav--open {
             -webkit-transform: translateX(0);
                     transform: translateX(0);
@@ -1678,7 +1688,7 @@ a {
         }
 
 .image-grid .grid-item {
-        width: 100%;
+        width: calc(100% - 10px);
         padding: 35px;
         position: absolute;
     }
@@ -1867,10 +1877,17 @@ a {
     }
 
 .blog-section .post {
-        flex-basis: 33.333333%;
+        flex-basis: 100%;
         padding: 10px;
         position: relative;
     }
+
+@media (min-width: 800px) {
+
+.blog-section .post {
+            flex-basis: 33.333333%
+    }
+	}
 
 .blog-section .post .blog-content {
             text-align: center;
