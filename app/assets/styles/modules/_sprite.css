@@ -1,13 +1,13 @@
 /* DO not edit modules/_sprite directly as it is generated automatically by gulp instead edit gulp/templates/sprite.css*/
 	.icon {
-		background-image: url('../../assets/images/sprites/sprite-4003e2db.svg');
+		background-image: url('../../assets/images/sprites/sprite-d4a74b88.svg');
 	}
 	.no-svg .icon {
-		background-image: url('../../assets/images/sprites/sprite-4003e2db.png');
+		background-image: url('../../assets/images/sprites/sprite-d4a74b88.png');
 	}
 	.icon--account {
 		width:18px;
-		height:18px;
+		height:17.78px;
 		background-position: 25% 0;
 	}
 	.icon--bag {

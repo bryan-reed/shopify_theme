@@ -1040,16 +1040,16 @@ a {
 /* DO not edit modules/_sprite directly as it is generated automatically by gulp instead edit gulp/templates/sprite.css*/
 
 .icon {
-		background-image: url('../../assets/images/sprites/sprite-4003e2db.svg');
+		background-image: url('../../assets/images/sprites/sprite-d4a74b88.svg');
 	}
 
 .no-svg .icon {
-		background-image: url('../../assets/images/sprites/sprite-4003e2db.png');
+		background-image: url('../../assets/images/sprites/sprite-d4a74b88.png');
 	}
 
 .icon--account {
 		width:18px;
-		height:18px;
+		height:17.78px;
 		background-position: 25% 0;
 	}
 
@@ -1366,7 +1366,8 @@ a {
             position: relative;
             width: 100%;
             -webkit-transform: translateX(0);
-                    transform: translateX(0)
+                    transform: translateX(0);
+            height: auto
     }
 	}
 
@@ -1735,7 +1736,6 @@ a {
 .featured-products__product {
 
         position: relative;
-        margin: 0 10px;
         /* background-color: #ccc; */
     }
 
@@ -1752,6 +1752,13 @@ a {
                 /* transform: translateX(0); */
                 opacity: 1;
             }
+
+@media (min-width: 530px) {
+
+.featured-products__product {
+        margin: 0 10px
+    }
+	}
 
 .featured-products__product .product-content {
             margin-top: 15px;

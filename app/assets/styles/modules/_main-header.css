@@ -152,6 +152,7 @@
             position: relative;
             width: 100%;
             transform: translateX(0);
+            height: auto;
         }
         &__top{
             display: flex;
