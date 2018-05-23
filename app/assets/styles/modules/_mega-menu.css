@@ -1,49 +1,79 @@
 .mega-menu {
-    
-    position: initial !important;
+  position: initial !important;
+  &__container {
+    display: none;
+  }
+  &__container.mobile-open {
+    display: block;
+    h4 {
+    }
+    .mega-menu__container__col__text {
+      padding: 0;
+      /* border-top: none; */
+    }
+    ul {
+      display: block;
+      top: 0;
+      position: relative;
+      border-left: none;
+      border-right: none;
+      border-bottom: none;
+    }
+  }
+  @mixin atMedium {
     &__container {
-        display: none;
+      background: #fff;
+      position: absolute;
+      border: 2px solid #000;
+      top: 100%;
+      width: 100%;
+      left: 0;
+      padding: 15px;
     }
-    @mixin atMedium {
-        &__container {
-            background: #fff;
-            position: absolute;
-            border: 2px solid #000;
-            top: 100%;
-            width: 100%;
-            left: 0;
-            padding: 15px;
+    &:hover &__container {
+      display: flex;
+      ul {
+        display: block;
+        position: initial;
+        border: none;
+        li:hover {
+          background: none;
         }
-        &:hover &__container {
-            display: flex;
-            ul {
-                display: block;
-                position: initial;
-                border: none;
-                li:hover {
-                    background: none;
-                }
-            }
-        }
+      }
     }
-    &__container__col {
-        img {
-            max-width: 250px;
-            margin-right: 30px;
-            display: none;
-            @mixin atMedium {
-                display: block;
-            }
-        }
-        &__text {
-            padding: 0 15px;
-            h4 {
-                text-align: left;
-                margin-bottom: 15px;
-            }
-            ul li {
-                padding: 5px 0;
-            }
-        }
+  }
+  &__container__col {
+    img {
+      max-width: 250px;
+      margin-right: 30px;
+      display: none;
+      @mixin atMedium {
+        display: block;
+      }
     }
+    &__text {
+      padding: 0 15px;
+      border-top: 2px solid #000;
+      h4 {
+        text-align: left;
+        padding: 10px;
+        font-weight: normal;
+        cursor: pointer;
+      }
+      @mixin atMedium {
+        border-top: none;
+        h4 {
+          margin-bottom: 15px;
+          padding: 0;
+          font-weight: bold;
+        }
+      }
+      ul li {
+        padding: 10px 10px 10px 20px;
+        @mixin atMedium {
+          padding: 5px 0;
+        }
+      }
+    }
+  }
 }

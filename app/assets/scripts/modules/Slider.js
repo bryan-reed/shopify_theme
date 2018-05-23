@@ -4,7 +4,10 @@ class Slider {
     constructor(el) {
         $(el).flexslider({
             animation: "slide",
-            controlNav: false
+            controlNav: false,
+            start: function() {
+                window.dispatchEvent(new Event('resize')); //trigger resize when flexslider is loaded, fixes bug where part of second slide shows
+            }
         });
     }
 }
