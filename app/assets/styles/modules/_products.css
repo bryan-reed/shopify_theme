@@ -1,0 +1,37 @@
+.product_scroller {
+  /* Scrolling container for product listing */
+  display: flex;
+  flex-wrap: wrap;
+  /* height: 200px;
+overflow: auto; */
+  .product {
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    width: 50%;
+    @mixin atMedium {
+      &--1 {
+        width: 100%;
+      }
+      &--2 {
+        width: 50%;
+      }
+      &--4 {
+        width: 25%;
+      }
+      &--6 {
+        width: calc(100% / 6);
+      }
+    }
+
+    & .vendor {
+      font-style: italic;
+    }
+    & .title {
+      font-weight: 800;
+    }
+    & .price {
+      font-weight: 400;
+    }
+  }
+}

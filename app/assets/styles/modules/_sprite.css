@@ -1,56 +1,76 @@
 /* DO not edit modules/_sprite directly as it is generated automatically by gulp instead edit gulp/templates/sprite.css*/
 	.icon {
-		background-image: url('../../assets/images/sprites/sprite-d4a74b88.svg');
+		background-image: url('../../assets/images/sprites/sprite-461b0d71.svg');
 	}
 	.no-svg .icon {
-		background-image: url('../../assets/images/sprites/sprite-d4a74b88.png');
+		background-image: url('../../assets/images/sprites/sprite-461b0d71.png');
 	}
 	.icon--account {
 		width:18px;
 		height:17.78px;
-		background-position: 25% 0;
+		background-position: 20% 0;
 	}
 	.icon--bag {
 		width:14.5px;
 		height:17.79px;
-		background-position: 23.841059602649008% 99.6067967982025%;
+		background-position: 96.2566844919786% 24.92729538845035%;
 	}
 	.icon--facebook {
 		width:9.38px;
 		height:18px;
-		background-position: 0 25.35211267605634%;
+		background-position: 0 25%;
 	}
 	.icon--facebook_c {
 		width:18px;
 		height:18px;
-		background-position: 13.027777777777779% 25.35211267605634%;
+		background-position: 10.422222222222224% 25%;
+	}
+	.icon--facebook_white {
+		width:18px;
+		height:18px;
+		background-position: 40% 0;
 	}
 	.icon--google {
 		width:18px;
 		height:11.85px;
-		background-position: 50% 0;
+		background-position: 40% 23.032629558541267%;
 	}
 	.icon--google_c {
 		width:18px;
 		height:18px;
-		background-position: 50% 16.690140845070424%;
+		background-position: 0 50%;
+	}
+	.icon--google_white {
+		width:18px;
+		height:18px;
+		background-position: 20% 50%;
 	}
 	.icon--instagram {
 		width:18px;
 		height:18px;
-		background-position: 0 50.70422535211268%;
+		background-position: 40% 50%;
 	}
 	.icon--instagram_c {
 		width:18px;
 		height:18px;
-		background-position: 25% 50.70422535211268%;
+		background-position: 60% 0;
+	}
+	.icon--instagram_white {
+		width:18px;
+		height:18px;
+		background-position: 60% 25%;
 	}
 	.icon--pinterest {
 		width:14.39px;
 		height:18px;
-		background-position: 47.6127496362915% 50.70422535211268%;
+		background-position: 57.686144642666385% 50%;
 	}
 	.icon--pinterest_c {
+		width:18px;
+		height:18px;
+		background-position: 0 75%;
+	}
+	.icon--pinterest_white {
 		width:18px;
 		height:18px;
 		background-position: 0 0;
@@ -58,40 +78,60 @@
 	.icon--search {
 		width:18px;
 		height:17.77px;
-		background-position: 75% 21.05854274884178%;
+		background-position: 40% 74.76117956527759%;
 	}
 	.icon--shoppingCart {
 		width:18px;
 		height:15.49px;
-		background-position: 75% 44.578968847775805%;
+		background-position: 60% 72.4734934908066%;
 	}
 	.icon--snapchat {
 		width:18px;
 		height:16.93px;
-		background-position: 0 74.92715415568199%;
+		background-position: 80% 0;
 	}
 	.icon--snapchat_c {
 		width:18px;
 		height:18px;
-		background-position: 100% 0;
+		background-position: 80% 23.51388888888889%;
+	}
+	.icon--snapchat_white {
+		width:18px;
+		height:18px;
+		background-position: 80% 48.513888888888886%;
+	}
+	.icon--sort {
+		width:18px;
+		height:18px;
+		background-position: 80% 73.51388888888889%;
 	}
 	.icon--tumblr {
 		width:11.84px;
 		height:18px;
-		background-position: 92.11873080859775% 25.35211267605634%;
+		background-position: 0 100%;
 	}
 	.icon--tumblr_c {
 		width:18px;
 		height:18px;
-		background-position: 100% 50.70422535211268%;
+		background-position: 13.155555555555555% 100%;
+	}
+	.icon--tumblr_white {
+		width:18px;
+		height:18px;
+		background-position: 33.15555555555556% 100%;
 	}
 	.icon--twitter {
 		width:18px;
 		height:15px;
-		background-position: 75% 0;
+		background-position: 53.15555555555556% 96%;
 	}
 	.icon--twitter_c {
 		width:18px;
 		height:18px;
-		background-position: 0 99.90140845070424%;
+		background-position: 20% 75%;
+	}
+	.icon--twitter_white {
+		width:18px;
+		height:18px;
+		background-position: 100% 0;
 	}

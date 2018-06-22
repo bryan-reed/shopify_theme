@@ -9,7 +9,8 @@
     }
     overflow: hidden;
     position: relative;
-    .slick-prev:before, .slick-next:before {
+    .slick-prev:before,
+    .slick-next:before {
         color: #000;
     }
     img {
@@ -23,7 +24,6 @@
         margin-right: 0;
         /* width: 100vw; */
         @mixin atMedium {
-            
             margin-left: -10px;
             margin-right: -10px;
             /* width: auto; */
@@ -36,7 +36,6 @@
             margin-left: -10px;
             margin-right: -10px;
         }
-        
         div {
             /* flex-basis: 1; */
             @mixin atSmall {
@@ -61,43 +60,42 @@
                 /* transform: translateX(0); */
                 opacity: 1;
             }
-
         }
-
         position: relative;
-       @mixin atSmall {
-        margin: 0 10px;
-       }
-        .product-content {
-            margin-top: 15px;
-            &.left {
-                text-align: left;
-            }
-            &.center {
-                text-align: center;
-            }
-            &.right {
-                text-align: right;
-            }
-            .chip {
-                width: 15px;
-                height: 15px;
-                border-radius: 50%;
-                display: inline-block;
-            }
-            .red {
-                background-color: red;
-            }
-            .green {
-                background-color: green;
-            }
-            .brown {
-                background-color: brown;
-            }
-            .blue {
-                background-color: blue;
-            }
+        @mixin atSmall {
+            margin: 0 10px;
         }
         /* background-color: #ccc; */
+    }
+}
+
+.product-content {
+    margin-top: 15px;
+    &.left {
+        text-align: left;
+    }
+    &.center {
+        text-align: center;
+    }
+    &.right {
+        text-align: right;
+    }
+    .chip {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .red {
+        background-color: red;
+    }
+    .green {
+        background-color: green;
+    }
+    .brown {
+        background-color: brown;
+    }
+    .blue {
+        background-color: blue;
     }
 }

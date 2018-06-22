@@ -16,3 +16,5 @@
 @import "modules/_video";
 @import "modules/_blog-section";
 @import "modules/_footer";
+@import "modules/_products";
+@import "pages/collection";

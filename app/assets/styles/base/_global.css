@@ -1,41 +1,50 @@
 body {
-    font-family: 'Roboto', 'sans-serif';
-    overflow-x: hidden;
+  font-family: "Roboto", "sans-serif";
+  overflow-x: hidden;
 }
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 li {
-    list-style: none;
+  list-style: none;
 }
+
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
+
 a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
+
 .move-over {
-    margin-left: 0;
-    position: absolute;
-    /* transform: translateX(0);
+  margin-left: 0;
+  position: absolute;
+  @mixin atSmall {
+    position: relative;
+    /* display: none; */
+  }
+  /* transform: translateX(0);
     transition: 0.2s transform ease-out; */
-    transition: 0.2s all ease-out;
-    &.open {
-        &::before {
-            content: "";
-            background-color: rgba(0,0,0,.7);
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: 999;
-        }
-        margin-left: 50%;
-        /* transform: translateX(50%); */
+  transition: 0.2s all ease-out;
+  &.open {
+    &::before {
+      content: "";
+      background-color: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 999;
     }
+    margin-left: 50%;
+    /* transform: translateX(50%); */
+  }
 }
